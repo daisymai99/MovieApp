@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Movie App</string>
+    <string name="sign_in">Hooman chào bạn </string>
+    <string name="sign_in_2"> Hãy nhập số điệ thoại để có thêm nhiều chức năng nhé!  </string>
+    <string name="sign_in_by_another"> Hoặc đăng nhập bằng  </string>
+    <string name="btnContinue">Tiếp tục </string>
+    <string name="edtNumber">Số điện thoại </string>
+    <string name="Sms_Tilte">Mã OTP xác nhận</string>
+    <string name="Sms_text">Hãy điền OTP gồm 6 số vừa được gửi đến số </string>
+    <string name="Resend_sms">Mã OTP xác nhận</string>
 </resources>
