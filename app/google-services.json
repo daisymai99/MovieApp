@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "735834065125",
+    "project_id": "movie-appp-62561",
+    "storage_bucket": "movie-appp-62561.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735834065125:android:f6aa5dc73dc24be471ec0c",
+        "android_client_info": {
+          "package_name": "com.little_bird.movieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735834065125-h0jff2tfr107nnu7rruq70dr5i33rhqk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.little_bird.movieapp",
+            "certificate_hash": "a4b5412d02d0d9d24c256767641fd229baa31ef0"
+          }
+        },
+        {
+          "client_id": "735834065125-l83328g6vvpt9jg9auba5nbt0j33ddml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXJrPEfVQ_ln6YOIhFSormOOr3v6K8xWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735834065125-l83328g6vvpt9jg9auba5nbt0j33ddml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

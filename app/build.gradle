@@ -25,6 +25,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
 }
 
 dependencies {
@@ -37,5 +39,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     //pinView
-    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+
 }

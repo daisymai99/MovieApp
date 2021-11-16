@@ -8,11 +8,12 @@
     android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/btnBack"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/back"
         android:clickable="true"
-        android:id="@+id/btnBack"/>
+        android:src="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,6 +43,32 @@
         android:layout_marginTop="20dp" />
 
 
+    <com.chaos.view.PinView
+        android:layout_gravity="center"
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:padding="18dp"
+        app:cursorWidth="0dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="8dp"
+        app:itemSpacing="8dp"
+        app:itemWidth="48dp"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Resend_sms"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
 
 
 </LinearLayout>
