@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Sms.class));
+                startActivity(new Intent(getApplicationContext(),Sms.class).putExtra(edtNumber.getText().toString().trim(),"User_Number"));
             }
         });
 
