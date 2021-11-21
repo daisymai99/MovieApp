@@ -48,6 +48,7 @@ public class Sms extends AppCompatActivity {
 
         addEvents();
         sendVertificationCode(getNumberUser);
+        Log.d("sms",getNumberUser+"");
 
     }
 
