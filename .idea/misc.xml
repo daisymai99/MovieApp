@@ -11,8 +11,12 @@
         <entry key="..\:/MovieApp/app/src/main/res/drawable/close.xml" value="0.2526041666666667" />
         <entry key="..\:/MovieApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2526041666666667" />
         <entry key="..\:/MovieApp/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
-        <entry key="..\:/MovieApp/app/src/main/res/layout/activity_sms.xml" value="0.23645833333333333" />
+        <entry key="..\:/MovieApp/app/src/main/res/layout/activity_set_password.xml" value="0.1" />
+        <entry key="..\:/MovieApp/app/src/main/res/layout/activity_sms.xml" value="0.16123316796598158" />
+        <entry key="..\:/MovieApp/app/src/main/res/layout/fragment_anime.xml" value="0.23645833333333333" />
+        <entry key="..\:/MovieApp/app/src/main/res/layout/fragment_b_x_h.xml" value="0.23645833333333333" />
         <entry key="..\:/MovieApp/app/src/main/res/layout/pop_up_sign_in.xml" value="0.23645833333333333" />
+        <entry key="..\:/MovieApp/app/src/main/res/menu/bottom_nav.xml" value="0.23645833333333333" />
         <entry key="..\:/New folder/app/src/main/res/drawable/background.xml" value="0.2703125" />
         <entry key="..\:/New folder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/New folder/app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />

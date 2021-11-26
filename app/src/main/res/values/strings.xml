@@ -9,4 +9,6 @@
     <string name="Sms_Tilte">Mã OTP xác nhận</string>
     <string name="Sms_text">Hãy điền OTP gồm 6 số vừa được gửi đến số </string>
     <string name="Resend_sms">Không nhận được mã? Gửi lại</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
