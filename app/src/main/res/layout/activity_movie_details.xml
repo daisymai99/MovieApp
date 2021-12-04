@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Movie_details"
+    android:background="@drawable/themes_app"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageMovie"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/txtMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:layout_margin="20dp"
+        android:text="Start Over"
+        android:textSize="16dp"/>
+</LinearLayout>

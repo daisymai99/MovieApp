@@ -33,7 +33,7 @@ public class Sms extends AppCompatActivity {
     String getNumberUser,SmsID, SmsCode;
     TextView _numberUser, txtResendSms;
     Button btnConfirm;
-    ImageView btnBack;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +48,9 @@ public class Sms extends AppCompatActivity {
 
         addEvents();
         sendVertificationCode(getNumberUser);
+
         Log.d("sms",getNumberUser+"");
+        FirebaseAuth.getInstance().getFirebaseAuthSettings().forceRecaptchaFlowForTesting(true);
 
     }
 
@@ -57,17 +59,17 @@ public class Sms extends AppCompatActivity {
         _numberUser = findViewById(R.id.txtNumberUser);
         btnConfirm = findViewById(R.id.btnConfirm);
         txtResendSms = findViewById(R.id.txtResendSms);
-        btnBack = findViewById(R.id.btnBack);
+//        btnBack = findViewById(R.id.btnBack);
     }
 
     void addEvents(){
 
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Sms.super.onBackPressed();
-            }
-        });
+//        btnBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Sms.super.onBackPressed();
+//            }
+//        });
 
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
