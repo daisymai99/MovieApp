@@ -1,4 +1,4 @@
-package com.little_bird.movieapp.model;
+package com.little_bird.movieapp.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,15 +11,20 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.little_bird.movieapp.R;
+import com.little_bird.movieapp.model.AllCategory;
+import com.little_bird.movieapp.model.CategoryItem;
+import com.little_bird.movieapp.model.ListOfMovie;
+import com.little_bird.movieapp.model.MovieResults;
+import com.little_bird.movieapp.model.Result;
 
 import java.util.List;
 
 public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapter.MainViewHolder> {
 
     Context context;
-    List<AllCategory> mlistCategory;
+    List<MovieResults> mlistCategory;
 
-    public MainRecyclerAdapter(Context context, List<AllCategory> mlistCategory) {
+    public MainRecyclerAdapter(Context context, List<MovieResults> mlistCategory) {
         this.context = context;
         this.mlistCategory = mlistCategory;
     }
@@ -32,8 +37,8 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MainRecyclerAdapter.MainViewHolder holder, int position) {
-        holder.textView.setText(mlistCategory.get(position).getCategoryTitle());
-        setItemRecycler(holder.recyclerMain,mlistCategory.get(position).getmItemList());
+        holder.textView.setText(mlistCategory.get(position).getPaper().toString());
+        setItemRecycler(holder.recyclerMain,mlistCategory.get(position).getResults());
     }
 
     @Override
@@ -54,7 +59,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
 
     }
 
-    private void setItemRecycler(RecyclerView recycler,List<CategoryItem> mListItem){
+    private void setItemRecycler(RecyclerView recycler,List<Result> mListItem){
         ItemRecyclerAdapter itemAdapter = new ItemRecyclerAdapter(context,mListItem);
         recycler.setLayoutManager(new LinearLayoutManager(context,RecyclerView.HORIZONTAL,false));
         recycler.setAdapter(itemAdapter);

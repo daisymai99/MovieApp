@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Sms"
+
     android:orientation="vertical">
 
 <!--    <ImageView-->
@@ -16,40 +17,41 @@
 <!--        tools:ignore="SpeakableTextPresentCheck" />-->
 
     <LinearLayout
-        android:layout_marginTop="50dp"
         android:id="@+id/layout"
-        
         android:layout_width="match_parent"
+
         android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Sms_Tilte"
-            android:textSize="32dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:text="@string/Sms_Tilte"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Sms_text"
-            android:textSize="18dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:text="@string/Sms_text"
+            android:textSize="18dp" />
+
         <TextView
             android:id="@+id/txtNumberUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0147852369"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:text="0147852369"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
 
         <com.chaos.view.PinView
@@ -77,24 +79,23 @@
             android:id="@+id/txtResendSms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Resend_sms"
-            android:textSize="18dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:text="@string/Resend_sms"
+            android:textSize="18dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:layout_below="@+id/layout"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:elevation="8dp"
-            android:padding="10dp"
             android:id="@+id/btnConfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="8dp"
             android:gravity="center"
-            android:text="@string/btnConfirm"/>
-
+            android:padding="10dp"
+            android:text="@string/btnConfirm" />
 
 
     </LinearLayout>

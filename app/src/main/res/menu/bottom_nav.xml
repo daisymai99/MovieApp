@@ -5,10 +5,16 @@
         android:id="@+id/home"
         android:title=""
         android:icon="@drawable/home_ic"/>
-    <item
-        android:id="@+id/user"
-        android:title=""
-        android:icon="@drawable/user_ic"/>
+
+<!--    <item-->
+<!--        android:id="@+id/search_bar"-->
+<!--        android:title=""-->
+<!--        android:icon="@drawable/search_bar"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/user"-->
+<!--        android:title=""-->
+<!--        android:icon="@drawable/user_ic"/>-->
     <item
         android:id="@+id/settings"
         android:title=""

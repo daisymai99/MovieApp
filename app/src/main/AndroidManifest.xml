@@ -13,9 +13,30 @@
         android:theme="@style/Theme.MovieApp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Video_Play"
-            android:screenOrientation="landscape"
+            android:name=".Setting"
             android:exported="true" />
+        <activity
+            android:name=".Login_page"
+            android:exported="true" />
+        <activity
+            android:name=".Search_Movie"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="little_bird_movie.com"
+                    android:pathPattern="/movie"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Video_Play"
+            android:exported="true"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Movie_details"
             android:exported="true" />

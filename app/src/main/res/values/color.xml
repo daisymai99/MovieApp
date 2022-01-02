@@ -10,5 +10,7 @@
     <color name="yellow">#FFFFFFFF</color>
     <color name="blue">#FF3700B3</color>
     <color name="theme_app">#1D0455</color>
+    <color name="colorLogin">#273036</color>
+    <color name="dark_white">#333333</color>
 
 </resources>

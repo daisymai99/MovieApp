@@ -78,6 +78,7 @@ public class Sms extends AppCompatActivity {
                 if (data.equals(SmsCode)) {
 
                     verifySmsCode(data, getNumberUser);
+                    startActivity(new Intent(getApplicationContext(),SetPassword.class).putExtra("sdt",data));
 
                 } else {
                     Toast.makeText(Sms.this, "Mã xác nhận không đúng", Toast.LENGTH_SHORT).show();

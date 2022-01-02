@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Movie App</string>
-    <string name="sign_in">Hooman chào bạn </string>
+    <string name="sign_in">Đăng ký tài khoản </string>
     <string name="sign_in_2"> Hãy nhập số điệ thoại để có thêm nhiều chức năng nhé!  </string>
     <string name="sign_in_by_another"> Hoặc đăng nhập bằng  </string>
     <string name="btnContinue">Tiếp tục </string>

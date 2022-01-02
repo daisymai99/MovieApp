@@ -45,4 +45,7 @@ public class CategoryItem {
         this.imageUrl = imageUrl;
         this.fileUrl = fileUrl;
     }
+
+    public CategoryItem() {
+    }
 }

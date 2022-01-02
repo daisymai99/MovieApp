@@ -1,13 +1,12 @@
-package com.little_bird.movieapp.model;
+package com.little_bird.movieapp.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,14 +14,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.little_bird.movieapp.Movie_details;
 import com.little_bird.movieapp.R;
+import com.little_bird.movieapp.model.CategoryItem;
+import com.little_bird.movieapp.model.Result;
 
 import java.util.List;
 
 public class ItemRecyclerAdapter extends RecyclerView.Adapter<ItemRecyclerAdapter.ItemViewHolder> {
     Context context;
-    List<CategoryItem> categoryItemList;
+    List<Result> categoryItemList ;
 
-    public ItemRecyclerAdapter(Context context, List<CategoryItem> categoryItemList) {
+    public ItemRecyclerAdapter(Context context, List<Result> categoryItemList) {
         this.context = context;
         this.categoryItemList = categoryItemList;
     }
@@ -34,16 +35,19 @@ public class ItemRecyclerAdapter extends RecyclerView.Adapter<ItemRecyclerAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemRecyclerAdapter.ItemViewHolder holder, int position) {
-        Glide.with(context).load(categoryItemList.get(position).getImageUrl()).into(holder.img);
+    public void onBindViewHolder(@NonNull ItemRecyclerAdapter.ItemViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        String poster = "https://image.tmdb.org/t/p/w500" + categoryItemList.get(position).getPosterPath();
+
+
+        Glide.with(context).load(poster).into(holder.img);
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(context, Movie_details.class);
                 i.putExtra("movieid",categoryItemList.get(position).getId());
-                i.putExtra("movieName",categoryItemList.get(position).getMovieName());
-                i.putExtra("movieImg",categoryItemList.get(position).getImageUrl());
-                i.putExtra("movieFile",categoryItemList.get(position).getFileUrl());
+                i.putExtra("movieName",categoryItemList.get(position).getTitle());
+                i.putExtra("movieImg",poster);
+                i.putExtra("movieFile",categoryItemList.get(position).getVideo());
                 context.startActivity(i);
             }
         });
